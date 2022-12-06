@@ -13,49 +13,40 @@ body {
 header {
   background-color: rgb(44, 44, 44);
   color: antiquewhite;
-
 }
 
 header h1{
-display: grid;
-grid-template-columns: 100%;
-text-align: center;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
+  display: grid;
+  grid-template-columns: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*Navigation CSS */
 
-.nav-grid {
-max-width: 300px;
-height: 600px;
-margin: 0 auto;
-
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-column-gap: 10px;
-
-
-}
-.about-me {
+nav {
   display: flex;
-
+  justify-content: flex-end;
+  height: 0px;
+  margin: 0px 5%;
 }
 
 nav a {
-color: antiquewhite;
-
-
+  margin: 5px ;
+  background-color: #dddddd;
 }
+
 
 .hero-banner{
-margin: 0%;
-background-image: url("/images/02-hero-bg.jpg");
-color: aliceblue;
-padding: 2%;
+padding: 5%;
+margin: 10px 10px 10px 10px;
+}
 
+.hero-banner h2 {
+color: antiquewhite;
 
 }
+
+
+
 .container {
 display: grid;
 grid-template-columns: 25% 75%;
@@ -100,4 +91,29 @@ h6 {
 p {
   margin: 10px;
 }
+
+
+
+#Figma
+{
+
+}
+
+#HTML
+{
+  color: rgb(250, 235, 215);
+  grid-area: auto;
+  background-image: url(/images/screenshot-html.png);
+
+}
+
+#CSS
+{
+  color: antiquewhite;
+background-image: url(/images/screenshot-css.png);
+}
+
+#Excalidraw
+
+#Designing
 
