@@ -31,52 +31,42 @@ nav {
 
 nav a {
   margin: 5px ;
-  background-color: #dddddd;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(185, 18, 57);
 }
 
 
 .hero-banner{
-padding: 5%;
-margin: 10px 10px 10px 10px;
+  padding: 0% 10px;
+  background-color: antiquewhite;
 }
 
 .hero-banner h2 {
-color: antiquewhite;
+  color: antiquewhite;
 
 }
-
-
+.hero-banner img {
+  width: 100px;
+}
 
 .container {
-display: grid;
-grid-template-columns: 25% 75%;
-background-color: rgb(255, 255, 255);
-color: rgba(46, 76, 160, 0.924);
-margin: 5%;
-
-
-}
-
-#about {
-
+  display: grid;
+  grid-template-columns: 25% 75%;
+  background-color: rgb(255, 255, 255);
+  color: rgba(46, 76, 160, 0.924);
+  margin: 5%;
 
 
 }
 
 #work {
-display: grid;
-grid-template-columns: 75% 25%;
-grid-template-rows: 75% 25%;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 75% 25%;
 
 }
 
-
-
-
-
-#contact {
-
-}
 
 
 h1,
@@ -96,24 +86,38 @@ p {
 
 #Figma
 {
-
+  color: antiquewhite;
+  background-image: url(/starter/Portfolio/images/figma.png);
+  border-radius: 10px;
 }
 
 #HTML
 {
   color: rgb(250, 235, 215);
-  grid-area: auto;
-  background-image: url(/images/screenshot-html.png);
-
+  background-image: url(/starter/Portfolio/images/screenshot-html.png);
+  background
+  border-radius: 10px;
+  
 }
 
 #CSS
 {
   color: antiquewhite;
-background-image: url(/images/screenshot-css.png);
+  background-image: url(/starter/Portfolio/images/screenshot-css.png);
+  border-radius: 10px;
+
 }
 
 #Excalidraw
-
+{
+  color: rgb(0, 0, 0);
+  background-image: url(/starter/Portfolio/images/excalidraw.png);
+  border-radius: 10px;
+}
 #Designing
+{
+  color: antiquewhite;
+  background-image: url(/starter/Portfolio/images/colors.png);
+  border-radius: 10px;
+}
 
