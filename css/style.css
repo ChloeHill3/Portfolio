@@ -4,70 +4,155 @@
 }
 
 body {
-  margin: 0%;
-  padding: 0;
   font-family: Garamond, serif;
-  line-height: 2.5;
 
 }
+/* CSS */
 header {
-  background-color: rgb(44, 44, 44);
-  color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  color: rgb(76, 93, 82);  
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 1;
+  border-radius: 10px 10px 0px 0px;
 }
 
 header h1{
-  display: grid;
-  grid-template-columns: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Brush Script MT", cursive;
+  margin-left: -150px;
+}
+
+header h1:hover {
+  color: rgb(104, 127, 112);
 }
 /*Navigation CSS */
 
 nav {
-  display: flex;
-  justify-content: flex-end;
-  height: 0px;
-  margin: 0px 5%;
+  display: inline-flex;
+  position: relative;
+  float: right; 
+  width: 300px;
+  margin-right: -200px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-end;
+
 }
 
 nav a {
-  margin: 5px ;
-  padding: 10px;
+  display: inline-block;
+  position: relative;
   text-decoration: none;
-  color: rgb(185, 18, 57);
+  color: #ffffff;
+  border-top: 5px solid #ffffff;
+  padding: 3px 15px 3px 15px; 
+  background: rgb(33, 70, 40);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: Garamond, serif;
+  font-size: small;
+ 
 }
 
+nav a:hover { 
+  background-color: #55655c;
+  border-top: 5px solid #c2cbc3;
+}
 
+/* Learn more about me CSS */
 .hero-banner{
-  padding: 0% 10px;
-  background-color: antiquewhite;
+  display: inline-flex;
+  position: relative;
+  flex-direction: row-reverse;
+  padding: 1px 550px 5px;
+  margin-left: 4%; 
+  margin-right: 4%;
+  background-color: rgb(33, 70, 40);
+  font-family: Garamond, serif;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+
 }
 
 .hero-banner h2 {
-  color: antiquewhite;
-
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: Garamond, serif;
+  margin: auto auto auto auto;
+  font-style: italic;
+  
 }
 .hero-banner img {
-  width: 100px;
+  display: inline-flex;
+  position: relative;
+  float: left;
+  height: 75px;
+  width: 60px;
+  margin-left: -300px;
+  background-color: #55655c;
+  border-right: 10px solid #55655c;
 }
 
+/* Content CSS */
 .container {
   display: grid;
   grid-template-columns: 25% 75%;
-  background-color: rgb(255, 255, 255);
-  color: rgba(46, 76, 160, 0.924);
-  margin: 5%;
+  color: rgb(27, 70, 50);
+  margin: 80px;
+  margin-top: 0;
+}
 
+#about-me {
+  font-size: small;
+  color: rgb(76, 93, 82); 
+  background-color: antiquewhite;
+  border-right: 8px solid rgb(33, 70, 40);
+  border-radius: 10px;
+  margin: 30px 0% 30px;
+  margin-left: -30px;
+}
 
+#about-me:hover {
+  border-right: 8px solid rgb(33, 70, 40, 0.5);
 }
 
 #work {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 75% 25%;
+  font-size: small;
+  color: rgb(76, 93, 82);  
+  background-color: antiquewhite;
+  padding: 5px;
+  border-right: 8px solid rgb(33, 70, 40);
+  margin: 1% 0% 30px;
+  margin-left: -30px;
+  border-radius: 10px;
+}
 
+#work:hover {
+  border-right: 8px solid rgb(33, 70, 40, 0.5);
 }
 
 
+#work h2 {
+  color: rgb(76, 93, 82); ;
+}
+
+
+#contact {
+  font-size: small;
+  color: rgb(76, 93, 82); 
+  background-color: antiquewhite;
+  padding: 5px;
+  border-right: 8px solid rgb(33, 70, 40);
+  border-radius: 10px;
+  margin: 1% 0% 30px;
+  margin-left: -30px;
+}
+
+#contact:hover {
+  border-right: 8px solid rgb(33, 70, 40, 0.5);
+}
 
 h1,
 h2,
@@ -83,41 +168,72 @@ p {
 }
 
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  grid-auto-rows: 200px;
+}
+
+.wrapper p {
+  background-color: rgb(255, 255, 255, 0.3);
+  height: auto;
+}
 
 #Figma
 {
-  color: antiquewhite;
+  font-size: 30px;
+  font-weight: 600;
   background-image: url(/starter/Portfolio/images/figma.png);
-  border-radius: 10px;
+  background-size: 250px;
+  background-repeat: repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: 50%;
+  align-self: stretch;
 }
 
 #HTML
 {
-  color: rgb(250, 235, 215);
+  font-size: 30px;
+  font-weight: 600;
   background-image: url(/starter/Portfolio/images/screenshot-html.png);
-  background
-  border-radius: 10px;
-  
+  background-size: 250px;
+  background-repeat: repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  align-self: stretch;
 }
 
 #CSS
 {
-  color: antiquewhite;
+  font-size: 30px;
+  font-weight: 600;
   background-image: url(/starter/Portfolio/images/screenshot-css.png);
-  border-radius: 10px;
-
+  background-size: 250px;
+  background-repeat: repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  align-self: stretch;
 }
 
 #Excalidraw
 {
-  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 600;
   background-image: url(/starter/Portfolio/images/excalidraw.png);
-  border-radius: 10px;
-}
-#Designing
-{
-  color: antiquewhite;
-  background-image: url(/starter/Portfolio/images/colors.png);
-  border-radius: 10px;
+  background-size: 250px;
+  background-repeat: repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  align-self: stretch;
 }
 
+footer {
+  margin: 5%;
+  color: rgb(27, 70, 50);
+}
